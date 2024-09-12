@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nuchain | Banking</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="Photocon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/images/favicon.ico"/>
+        
+        <!-----Fonts Starts Here----->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-----Fonts Ends Here----->
+
+    <!-- country code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+        <!-----CSS Starts Here----->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" type="text/css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" type="text/css" media="screen" />
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+        <!-----CSS Ends Here----->
+    </head>
+    <body>
+        <!------------Header Starts Here------------->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+                <div class="container">
+                    <a class="header-item" href="index.html">
+                        <img alt="" class="logo" src="assets/images/logo_1.png ">
+                        <span>Banking</span>
+                    </a>                   
+                    <button class="btn d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.5 12a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12A.75.75 0 0 1 1.5 12zm0-4a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12A.75.75 0 0 1 1.5 8zm0-4a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12A.75.75 0 0 1 1.5 4z"/>
+                              </svg>                                                           
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://nuchain.co/why-nuchain">Why NuChain</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="resources-link">Resources</a>
+                                <div class="dropdown" id="dropdown-menu">
+                                  <ul>
+                                    <li><a target="_blank" href="https://nuchain.co/blogs" class="dropdown-link">Blogs & Press</a></li>
+                                    <li><a target="_blank" href="https://nuchain.co/assets/documents/Whitepaper.pdf" class="dropdown-link">White Paper</a></li>
+                                    <li><a target="_blank" href="https://nuchain.co/assets/documents/LitePaper.pdf" class="dropdown-link">Lite Paper</a></li>
+                                    <li><a target="_blank" href="https://nuchain.gitbook.io/untitled" class="dropdown-link">Documentation</a></li>
+                                    <li><a target="_blank" href="https://nuchain.co/support" class="dropdown-link">FAQs</a></li>
+                                  </ul>
+                                </div>
+                              </li>                              
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item padding-navilink-btn">
+                                <a class="common-button" href="https://nuchain.co/contact-us" target="_blank">Build with Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!------------Header Ends Here------------->
+
+        <!------------Banner section Starts Here------------->
+        <section class="banner_section">
+            <div class="container ">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="banner_section_left">
+                           <h1>Blockchain Meets Finance</h1>
+                           <p>NuChain is changing the way finance works with innovative blockchain solutions that make transactions safer, faster, and more transparent.</p>
+                           <a href="https://nuchain.co/contact-us" target="_blank" class="common-button hero_btn align-items-center gap-3">Build with Us <img src="assets/images/right_white_arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-end text-center mt-4">
+                        <img src="assets/images/banking-banner.jpg" alt="" class="img-fluid">                        
+                    </div>                    
+                </div>
+
+            </div>
+        </section>
+        <!------------Banner section Ends Here------------->
+
+        <!------------counter section Starts Here------------->
+        <section class="counter_section" id="about-us">
+            <div class="container">
+                <div class="counter_left_one_row">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="counter_left_one">
+                                <small>ABOUT</small>
+                                <h2>What is Blockchain in Banking & Finance?</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="counter_right_one">
+                                <p class="">Imagine a world where sending money across borders is as easy and fast as sending an email, and where all your financial transactions are secure and transparent. That’s what blockchain brings to banking and finance. At NuChain, we’re using blockchain to simplify complex financial processes, cut down costs, and make transactions more secure for everyone.</p>
+                                <p class="mb-0">
+                                    We’re already making a big impact: Over $500 million in transactions processed, supporting 50+ financial institutions worldwide, and earning multiple awards for our cutting-edge technology.                                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="counter_left_second_row">
+                    <div class="counter_left_second_row_box col-md-3 col-6">
+                        <h2>$<span class="counter-h2" data-max="8"></span>+</h2>
+                        <span>Money Raised</span>
+                    </div>
+                    <div class="counter_left_second_row_box col-md-3 col-6">
+                        <h2><span class="counter-h2" data-max="400"></span>+</h2>
+                        <span>Our Client</span>
+                    </div>
+                    <div class="counter_left_second_row_box col-md-3 col-6">
+                        <h2><span class="counter-h2" data-max="12"></span>+</h2>
+                        <span>Unicorn Award</span>
+                    </div>
+                    <div class="counter_left_second_row_box col-md-3 col-6">
+                        <h2><span class="counter-h2" data-max="4250"></span>+</h2>
+                        <span>Project Complete</span>
+                    </div>
+                </div>
+               
+            </div>
+
+        </section>
+        <!------------counter section Ends Here------------->
+
+        <!------------About section Starts Here------------->
+        <section class="about_section">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="about_left">
+                            <img src="assets/images/banking-about.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_right">
+                            <div class="common_head_section">
+                                <small>ABOUT</small>
+                                <h2>Why Use Blockchain in Banking & Finance?
+                                </h2>
+                            </div>
+                            <div>
+                                <p>Here’s why blockchain is a game-changer for finance</p>
+                                <ol>
+                                    <li><strong>Enhanced Security: </strong> By using a decentralized system, blockchain makes financial transactions much more secure, protecting them from fraud and cyberattacks.
+                                    </li>
+                                    <li><strong>Transparency You Can Trust: </strong>Every transaction is recorded on a shared ledger, which means everything is transparent and easy to track. It’s like having a clear window into the process, building trust with every transaction.
+
+                                    <li><strong>Greater Efficiency: </strong>Forget waiting days for transactions to clear. With blockchain, processes like cross-border payments happen in minutes, saving time and money.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------About section Ends Here------------->
+
+        <div class="position-relative">
+            <div class="line-1"><img src="assets/images/line-1.png" alt="">
+        </div>
+            <!------------Solution section Starts Here------------->
+        <section class="our_solution_section">
+            <div class="container">
+                <div class="our_solution_box_pink">
+                    <div class="common_head_section text-center">
+                        <small class="text-white">SOLUTIONS</small>
+                        <h2 class="text-white">Custom Solutions Engineered</h2>
+                        <p class="text-white">We offer solutions tailored to fit the unique needs of
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 my-2">
+                            <div class="our_solution_box">
+                                <h5> <img src="assets/images/checked.svg" alt=""> Enterprises</h5>
+                                <p>For large financial institutions, we provide full blockchain integration that enhances everything from payments to asset management, making operations smoother and more secure.
+                                </p>
+                                <a href="#">Explore <img src="assets/images/dark_arrow.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2">
+                            <div class="our_solution_box">
+                                <h5> <img src="assets/images/checked.svg" alt=""> Government Agencies </h5>
+                                <p>We focus on creating secure, transparent systems that meet regulatory standards, helping governments manage digital currencies and public finances with ease.
+                                </p>
+                                <a href="#">Explore <img src="assets/images/dark_arrow.svg" alt=""></a>
+                            </div> 
+                        </div>
+                        <div class="col-lg-4 my-2">
+                            <div class="our_solution_box">
+                                <h5> <img src="assets/images/checked.svg" alt=""> Startups</h5>
+                                <p> For fintech startups, we provide scalable blockchain infrastructure that helps you launch and grow quickly, turning innovative ideas into reality.
+                                </p>
+                                <a href="#">Explore <img src="assets/images/dark_arrow.svg" alt=""></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Solution section Ends Here------------->
+
+        <div class="position-relative"></div>
+            <div class="line-1"><img src="assets/images/line-2.png" alt="">
+        </div>
+        <!------------Offering section Starts Here------------->
+        <section class="offering_section">
+            <div class="container">
+                <div class="common_head_section text-center">
+                    <small>OFFERINGS</small>
+                    <h2>Our Offerings in Banking & Finance</h2>
+                    <p>Here’s what we can do</p>
+                </div>
+
+                <div class="row h-100">
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/Token_1.png" alt="">
+                            <h5>Cross-Border Payments
+                            </h5>
+                            <p>Speed up international transactions, making them faster, cheaper, and more secure by cutting out the middlemen.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/token_2.png" alt="">
+                            <h5>Trade Finance
+                            </h5>
+                            <p>Simplify trade processes with blockchain solutions that digitize paperwork, reduce fraud, and speed up transactions.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/token_3.png" alt="">
+                            <h5>KYC and AML Compliance
+                            </h5>
+                            <p>Use blockchain to streamline identity verification, making it quicker and more secure for customers and institutions alike.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/token_4.png" alt="">
+                            <h5>Asset Tokenization
+                            </h5>
+                            <p>Turn real-world assets like stocks, bonds, and real estate into digital tokens that are easy to trade, increasing liquidity and opening up new investment opportunities.
+                            </p>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/token_5.png" alt="">
+                            <h5>Securities Settlement
+                            </h5>
+                            <p>Make securities settlement nearly instant, reducing risk and costs while improving the efficiency of financial markets.
+                            </p>
+                        </div>                    
+                    </div>
+                    <div class="col-lg-4 h-100">
+                        <div class="offering_section_box">
+                            <img src="assets/images/token_6.png" alt="">
+                            <h5>Decentralized Finance (DeFi)
+                            </h5>
+                            <p>Open up a new world of financial services like lending, borrowing, and trading, all without the need for traditional banks.
+                            </p>
+                        </div>
+                        
+                    </div>                 
+
+                </div>
+            </div>
+        </section>
+        <!------------Offering section Ends Here------------->
+        </div>
+        
+        <!------------Event-section-section Starts Here------------->
+        <section class="event_section">
+            <div class="container">
+                <div class="common_head_section text-center pb-0">
+                    <small>EVENTS</small>
+                    <h2 >Events</h2>
+                </div>
+                <div class="event_slider_main">
+                    <div class="event_slider">
+                        <div>
+                            <div class="event_card">
+                                <div class="event_card_img">
+                                    <img src="assets/images/event.png" alt="">
+                                    <div class="event_card_tag">
+                                        <div class="event_card_tag_dice"></div>
+                                        Free
+                                    </div>
+                                </div>
+                                <div class="event_card_content">
+                                    <h5>Upcoming Events</h5>
+                                    <p>Want to see how blockchain is transforming finance? Join us at “Blockchain Life 2024” to learn from industry experts, network with peers, and explore the future of finance with blockchain.
+</p>
+                                    <hr>
+                                    <div class="event_card_content_inner">
+                                        <ul class="event_card_content_inner_left mb-0">
+                                            <li>
+                                                <img src="assets/images/calendar-check.svg" alt="">
+                                                <p class="mb-0">Wednesday, May 1</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/clock.svg" alt="">
+                                                <p class="mb-0">6:00 PM - 9:00 PM</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/location.svg" alt="">
+                                                <p class="mb-0">Twitter Space</p>
+                                            </li>
+
+                                        </ul>
+                                        <a class="common-button d-inline-block mt-3" type="button" data-bs-toggle="modal" data-bs-target="#addCalender">+ Add to Calender</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="event_card">
+                                <div class="event_card_img">
+                                    <img src="assets/images/event.png" alt="">
+                                    <div class="event_card_tag">
+                                        <div class="event_card_tag_dice"></div>
+                                        Free
+                                    </div>
+                                </div>
+                                <div class="event_card_content">
+                                    <h5>Upcoming Events</h5>
+                                    <p>Want to see how blockchain is transforming finance? Join us at “Blockchain Life 2024” to learn from industry experts, network with peers, and explore the future of finance with blockchain.
+</p>
+                                    <hr>
+                                    <div class="event_card_content_inner">
+                                        <ul class="event_card_content_inner_left mb-0">
+                                            <li>
+                                                <img src="assets/images/calendar-check.svg" alt="">
+                                                <p class="mb-0">Wednesday, May 1</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/clock.svg" alt="">
+                                                <p class="mb-0">6:00 PM - 9:00 PM</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/location.svg" alt="">
+                                                <p class="mb-0">Twitter Space</p>
+                                            </li>
+
+                                        </ul>
+                                        <a class="common-button d-inline-block mt-3" type="button" data-bs-toggle="modal" data-bs-target="#addCalender">+ Add to Calender</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="event_card">
+                                <div class="event_card_img">
+                                    <img src="assets/images/event.png" alt="">
+                                    <div class="event_card_tag">
+                                        <div class="event_card_tag_dice"></div>
+                                        Free
+                                    </div>
+                                </div>
+                                <div class="event_card_content">
+                                    <h5>Upcoming Events</h5>
+                                    <p>Want to see how blockchain is transforming finance? Join us at “Blockchain Life 2024” to learn from industry experts, network with peers, and explore the future of finance with blockchain.
+</p>
+                                    <hr>
+                                    <div class="event_card_content_inner">
+                                        <ul class="event_card_content_inner_left mb-0">
+                                            <li>
+                                                <img src="assets/images/calendar-check.svg" alt="">
+                                                <p class="mb-0">Wednesday, May 1</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/clock.svg" alt="">
+                                                <p class="mb-0">6:00 PM - 9:00 PM</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/location.svg" alt="">
+                                                <p class="mb-0">Twitter Space</p>
+                                            </li>
+
+                                        </ul>
+                                        <a class="common-button d-inline-block mt-3" type="button" data-bs-toggle="modal" data-bs-target="#addCalender">+ Add to Calender</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div class="event_card">
+                                <div class="event_card_img">
+                                    <img src="assets/images/event.png" alt="">
+                                    <div class="event_card_tag">
+                                        <div class="event_card_tag_dice"></div>
+                                        Free
+                                    </div>
+                                </div>
+                                <div class="event_card_content">
+                                    <h5>Upcoming Events</h5>
+                                    <p>Want to see how blockchain is transforming finance? Join us at “Blockchain Life 2024” to learn from industry experts, network with peers, and explore the future of finance with blockchain.
+</p>
+                                    <hr>
+                                    <div class="event_card_content_inner">
+                                        <ul class="event_card_content_inner_left mb-0">
+                                            <li>
+                                                <img src="assets/images/calendar-check.svg" alt="">
+                                                <p class="mb-0">Wednesday, May 1</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/clock.svg" alt="">
+                                                <p class="mb-0">6:00 PM - 9:00 PM</p>
+                                            </li>
+                                            <li>
+                                                <img src="assets/images/location.svg" alt="">
+                                                <p class="mb-0">Twitter Space</p>
+                                            </li>
+
+                                        </ul>
+                                        <a class="common-button d-inline-block mt-3" type="button" data-bs-toggle="modal" data-bs-target="#addCalender">+ Add to Calender</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="event_slider__arrow">
+                        <button class="event-left">
+                            <img src="assets/images/event_left.svg" alt="">
+                        </button>
+                        <button class="event-right">
+                            <img src="assets/images/event_right.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="common-button d-inline-block">Explore all Events <img src="assets/images/chevron-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Event-section-section Ends Here------------->
+        
+        <!------------Blog section starts Here------------->
+        <section class="event_section">
+            <div class="container">
+                <div class="common_head_section text-center pb-0">
+                    <small>Blogs</small>
+                    <h2 >Blogs</h2>
+                </div>
+                <div class="row gap-2">
+                    <div class="blog-cards">
+                        <div class="blog-img"><img src="assets/images//event-banner.jpg" alt=""></div>
+                        <div class="blog-card-contents">
+                            <div class="small-heading"><span>Web Design</span></div>
+                            <h5>How Blockchain is Transforming Banking and Finance</h5>
+                            <p>Discover how blockchain is making financial services faster, safer, and more accessible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog-cards">
+                        <div class="blog-img"><img src="assets/images//event-banner.jpg" alt=""></div>
+                        <div class="blog-card-contents">
+                            <div class="small-heading"><span>Web Design</span></div>
+                            <h5>The Rise of Asset Tokenization: Unlocking New Opportunities in Finance</h5>
+                            <p>Learn how turning physical assets into digital tokens is changing the investment landscape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------Blog section ends Here------------->
+
+        <!------------footer-section-section Starts Here------------->
+        <footer>
+            <div class="container">
+                <div class="d-flex flex-wrap">
+                    <div class="col-lg-4 col-12 footer-items">                    
+                        <a href="index.html" class="footer-item">
+                            <img src="assets/images/footer-logo.png" class="footer-logo" alt=""> 
+                            <span>Banking</span>
+                        </a>                       
+                    </div> 
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-items">
+                        <p>Legal</p>
+                        <ul>
+                            <li><a href="https://nuchain.co/terms-of-service">Terms of Service</a></li>
+                            <li><a href="https://nuchain.co/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="https://nuchain.co/cookies-policy">Cookies Policy</a></li>
+                            <li><a href="https://nuchain.co/data-processing">Data Protection</a></li>
+                        </ul>
+                    </div>                    
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-items">
+                        <p>Product</p>
+                        <ul>
+                            <li><a href="https://nuchainscan.com/" target="_blank">NuScan</a></li>
+                            <li><a href="https://www.nuchain.solutions/" target="_blank">Validator</a></li>
+                            <li><a href="https://nuchain.tech/" target="_blank">NuCode</a></li>
+                            <li><a href="">NuWallet</a></li>
+                        </ul>
+                    </div>               
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-items">
+                        <p>Company</p>
+                        <ul>
+                            <li><a href="https://nuchain.co/why-nuchain" target="_blank">About Us</a></li>
+                            <li><a href="https://nuchain.co/careers" target="_blank">Work With Us</a></li>
+                            <li><a href="https://nuchain.co/blogs" target="_blank">Blogs & News</a></li>
+                        </ul>
+                    </div>  
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 footer-items">
+                        <p>Resources</p>
+                        <ul>
+                            <li><a target="_blank" href="https://nuchain.gitbook.io/untitled">Documentation</a></li>
+                            <li><a target="_blank" href="https://nuchain.co/assets/documents/Whitepaper.pdf">Whitepaper</a></li>
+                            <li><a target="_blank" href="https://nuchain.co/assets/documents/LitePaper.pdf">Lite Paper</a></li>
+                        </ul>
+                    </div>
+                </div>             
+            </div>
+        </footer>
+        <!------------footer-section-section Ends Here------------->
+            <!-- add to calender modal form starts -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="addCalender" tabindex="-1" aria-labelledby="addCalender" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body calender-body">
+                    <h3 class="mb-0">Contact Us</h3>
+                    <p>So our team can reach out to you on time</p>
+                    <form>
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-lg-6 mt-4">
+                                <div class="form-group">
+                                  <label for="">First Name</label>
+                                  <input type="text" class="form-control" placeholder="First Name" value="" />
+                                </div>
+                              </div>
+                              <div class="col-lg-6 mt-4">
+                                <div class="form-group">
+                                  <label for="">Last Name</label>
+                                  <input type="text" class="form-control" placeholder="Last Name" value="" />
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div class="form-group mt-4">
+                                  <label for="">Email</label>
+                                  <input type="text" class="form-control" placeholder="Email" name="email" />
+                                </div>
+                                <div class="form-group mt-4">
+                                    <label for="">Phone Number</label>
+                                    <input type="number" id="mobile_code" class="form-control" placeholder="Phone Number" name="phone" />
+                                  </div>
+                              </div> 
+                              <div class="col-lg-6 mt-4">
+                                <div class="form-group">
+                                  <label for="">Share Your Message</label>
+                                  <textarea class="form-control" name="message" rows="5" placeholder="Write your message here"></textarea>
+                                </div>
+                              </div>                                                    
+                              <div class="col-lg-12 mt-4">
+                                <button type="submit" class="common-button float-end modal-submit">
+                                  Submit <i class="ps-2 fa-solid fa-arrow-right"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </form>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!-- add to calender form modal ends here -->
+
+        <!-----Script Starts Here----->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript" src="assets/js/custom.js"></script>
+        <!-----Script Ends Here----->
+
+    </body>
+
+</html>
