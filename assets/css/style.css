@@ -911,7 +911,8 @@ margin-top: 10px !important;
     } 
     .logo {
         max-width: 125px;
-        height: fit-content;
+        height: auto;
+        object-fit: contain;
         width: 100%;
     }
     .header-item span {
@@ -966,7 +967,8 @@ h6 {
     .logo {
         max-width: 100px;
         width: 100%;
-        height: fit-content;
+        height: auto;
+        object-fit: contain;
     }
     .header-item span {font-size: 15px !important; margin: auto;}
 }
